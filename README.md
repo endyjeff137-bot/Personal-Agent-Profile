@@ -1,6 +1,7 @@
 # Personal-Agent-Profile · 我的统一 AI 上下文底座
 
 > 🚀 **第一次用？直接看 [`QUICKSTART.md`](./QUICKSTART.md)** —— 建仓库、推送、启动提示词，复制粘贴即可。
+> 🔑 **推送要授权？看 [`GITHUB-AUTH.md`](./GITHUB-AUTH.md)** —— 三种登录方式 + 故障排查表。日常改动双击 `push.bat`。
 
 > 一份公开的、用 Markdown 写的「关于我」。
 > 让任何大模型 / AI 助手 / 本地 Agent / 桌面自动化脚本，在 30 秒内认识我、遵循我的偏好、接上我已有的背景——**不用每次换 AI 就重说一遍**。

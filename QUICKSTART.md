@@ -34,18 +34,20 @@
 
 ## ③ 第 2 步：把文件推上去（选一条路走）
 
-### 方案 A · 用命令（我已帮你 git init + 首次 commit 好了）
+### 方案 A · 用命令（remote 和身份我已帮你配好了，只需两步）
 
-建完仓库后，复制这两行执行（在本机终端 / Git Bash）：
+1. **先建空仓库**（见上方第 ② 步）
+2. 执行：
 
 ```bash
 cd "C:/Users/endyj/WorkBuddy/2026-10-05-10-46-59/Personal-Agent-Profile"
-git remote add origin https://github.com/endyjeff137-bot/Personal-Agent-Profile.git
 git push -u origin main
 ```
 
-第一次 push 会弹窗要你登录 GitHub → 用浏览器登录即可（推荐），
-或用 **Personal Access Token**（GitHub → Settings → Developer settings → Tokens → repo 权限）。
+**弹窗要登录？** → 本机已装 Git Credential Manager，选 **"Sign in with your browser"** 点授权即可。
+详细三种授权方式 + 报错对照表见 **[`GITHUB-AUTH.md`](./GITHUB-AUTH.md)**。
+
+**日常改动**：直接双击仓库里的 **`push.bat`**，输一句话说明，自动 add/commit/push。
 
 ### 方案 B · 完全不用命令（网页复制粘贴）
 
