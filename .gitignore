@@ -1,0 +1,42 @@
+# ===== 安全底线：本地私有内容永不上传 =====
+private/
+private/**
+*.local.md
+*.private.md
+
+# ===== 凭据与密钥 =====
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*_token.txt
+credentials.*
+
+# ===== 敏感数据文件 =====
+*cost*.xlsx
+*成本*.xlsx
+*进货价*
+*password*
+*密码*
+
+# ===== 系统/编辑器垃圾 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.obsidian/workspace*
+.obsidian/workspace-mobile.json
+*.swp
+*~
+
+# ===== 临时与缓存 =====
+tmp/
+temp/
+.cache/
+node_modules/
+
+# ===== 日志（可能含敏感路径/账号） =====
+*.log
