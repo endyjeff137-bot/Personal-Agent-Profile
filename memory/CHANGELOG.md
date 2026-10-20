@@ -25,6 +25,10 @@ confidence: high
 
 ## 2026
 
+- `[2026-10-20] 仓库 · 新增 · 🎉 已推送上线：github.com/endyjeff137-bot/Personal-Agent-Profile，27 文件 / 72KB，Public，分支 main，raw 链接已验证可访问`
+- `[2026-10-20] GITHUB-AUTH.md · 新增 · 授权指南：浏览器 OAuth / Fine-grained Token / gh CLI 三种方式 + 7 条报错对照表 + 代理开关命令`
+- `[2026-10-20] push.bat · 新增 · 一键推送脚本（双击 → 输说明 → 自动 add/commit/push）`
+
 ### 2026-10-20
 
 - `[2026-10-20] 全部 · 新增 · 仓库初始化：23 个模板文件，绑定 GitHub 账号 endyjeff137-bot，已本地 git init + 首次 commit`
