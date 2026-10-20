@@ -5,52 +5,55 @@
 agent_read: true
 kind: fact
 priority: normal
-updated: {{YYYY-MM-DD}}
+updated: 2026-10-20
 confidence: medium
 ---
 ```
 
 <!-- AGENT-READ:ON -->
 
-> 用途：让 AI 给方案时**用我已经有的工具**，别推荐我不会用的。
-> ⚠️ 只写工具名，**不要写账号、密码、Key**。
+> 只写工具名，不写账号/密码/Key。
 
 ## 电脑与系统
 
-- 主力电脑：**{{Windows / macOS / Linux}}**，系统版本 {{}}
-- 次要设备：**{{手机 iPhone/Android / 平板}}**
-- 是否多台电脑：**{{是，需要在 A 和 B 之间同步 / 否}}**
+- 主力电脑：**Windows**（主要工作机）
+- 手机：**{{iPhone / Android}}**
+- 多台电脑：**{{是 / 否}}** —— 跨电脑靠 GitHub 同步
 
 ## 日常软件
 
-- 笔记/知识库：**{{Obsidian / Notion / 飞书 / 无}}**
-- 办公：**{{Word/Excel/WPS / Google Docs}}**
-- 浏览器：**{{Chrome / Edge / 其他}}**
-- 通讯：**{{微信 / 企业微信 / 飞书 / Slack}}**
-- 设计/剪辑：**{{剪映 / PS / Canva / 无}}**
+- 笔记/知识库：**{{Obsidian / 无}}** 🔍（我的档案仓库支持 clone 进 Obsidian）
+- 办公：Excel / WPS
+- 浏览器：**Chrome**
+- 通讯：微信
+- 设计/剪辑：**{{剪映 / 无}}** 🔍
+- 网络：**闪连 VPN**（系统代理 127.0.0.1:19828，日常工作需要，别当风险项处理）
 
-## AI 工具（我在用哪些）
+## AI 工具（我在用）
 
-- 对话 AI：**{{ChatGPT / Claude / Gemini / 豆包 / DeepSeek / WorkBuddy / 通义}}**
-- 编程 AI：**{{Cursor / GitHub Copilot / 无}}**
-- 自动化：**{{Dify / n8n / Zapier / 本地脚本 / 无}}**
-- 本地模型：**{{Ollama / LM Studio / 无}}**
+- 主力 AI 工作台：**WorkBuddy**（带浏览器自动化、定时任务、资料库）
+- 其他对话 AI：**{{ChatGPT / Claude / 豆包 / DeepSeek}}** 🔍
+- 编程 AI：不直接使用（交给 WorkBuddy 代做）
+- 自动化：WorkBuddy 定时排程 + 本地脚本
+- 本地模型：无
 
 ## 我愿意接受的技术门槛
 
 <!-- AGENT-BLOCK:START kind=preference priority=high -->
-- **{{只接受复制粘贴，别让我装环境 / 可以装软件 / 能写代码}}**
-- 命令行：**{{完全不会，给我图形界面步骤 / 会一点 / 熟练}}**
-- Git：**{{会 clone/pull/push / 只会用 GitHub 网页 / 完全不会}}**
-- 推荐新工具时：**{{优先我已有的 / 可以推荐新的但必须给上手步骤}}**
+- **只接受复制粘贴和双击运行**，别让我装环境、配依赖
+- 命令行：**完全不熟** → 要给我可直接执行的完整命令，或者做成 `.bat` 让我双击
+- Git：**会 clone/pull/push 基础命令**，复杂的让 AI 做或写进脚本
+- 推荐新工具：**优先用我已有的**；要推新的必须给完整上手步骤
+- 需要长期重复做的事 → **给我一个脚本**，别每次让我敲命令
 <!-- AGENT-BLOCK:END -->
 
-## 常用平台与后台（只写名称）
+## 常用平台与后台
 
-- {{抖音小店后台 fxg.jinritemai.com}}
-- {{巨量千川}}
-- {{精选联盟 buyin.jinritemai.com}}
-- {{}}
+- 抖店后台 `fxg.jinritemai.com`
+- 巨量千川 `uni-prom`
+- 精选联盟 `buyin.jinritemai.com`
+- 飞鸽客服 `im.jinritemai.com`
+- GitHub（个人档案仓库 `endyjeff137-bot/Personal-Agent-Profile`）
 
 ## 我不用的工具（别推荐）
 
@@ -62,4 +65,4 @@ confidence: medium
 
 | 日期 | 改了什么 |
 |---|---|
-| {{YYYY-MM-DD}} | 初次创建 |
+| 2026-10-20 | AI 预填，含 🔍 推断项 |

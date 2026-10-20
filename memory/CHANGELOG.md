@@ -25,6 +25,7 @@ confidence: high
 
 ## 2026
 
+- `[2026-10-20] 批量 · 修改 · 🎯 AI 代填核心内容（基于合作观察）：00 身份 / 01 偏好★ / 02 业务背景 / 03 工具 / 04 知识地图 / 05 词典 / 06 目标 / 10 硬规则★ / 11 风格★ / 12 禁区 / 20 当前项目 / 31 教训。完成度 ~85%，🔍 标记为推断项待老板复核`
 - `[2026-10-20] 仓库 · 新增 · 🎉 已推送上线：github.com/endyjeff137-bot/Personal-Agent-Profile，27 文件 / 72KB，Public，分支 main，raw 链接已验证可访问`
 - `[2026-10-20] GITHUB-AUTH.md · 新增 · 授权指南：浏览器 OAuth / Fine-grained Token / gh CLI 三种方式 + 7 条报错对照表 + 代理开关命令`
 - `[2026-10-20] push.bat · 新增 · 一键推送脚本（双击 → 输说明 → 自动 add/commit/push）`
