@@ -1,6 +1,7 @@
 # ===== 安全底线：本地私有内容永不上传 =====
-private/
-private/**
+# 只保留 private/README.md（安全提醒文档本身不含敏感信息），其余全部忽略
+private/*
+!private/README.md
 *.local.md
 *.private.md
 

@@ -25,6 +25,13 @@ confidence: high
 
 ## 2026
 
+### 2026-10-20
+
+- `[2026-10-20] 全部 · 新增 · 仓库初始化：23 个模板文件，绑定 GitHub 账号 endyjeff137-bot，已本地 git init + 首次 commit`
+- `[2026-10-20] QUICKSTART.md · 新增 · 开箱指南：专属链接、一键建仓 URL、push 命令、启动提示词（已填账号）、故障排查表`
+- `[2026-10-20] .gitattributes · 新增 · 统一跨平台换行（* text=auto eol=lf），避免 Windows/macOS 混用产生 diff 噪音`
+- `[2026-10-20] .gitignore · 修改 · 改为 private/* + !private/README.md，安全提醒文档本身允许上传，其余私有内容仍全部排除`
+
 ### {{YYYY-MM-DD}}
 
 - `[{{YYYY-MM-DD}}] 全部 · 新增 · 仓库初始化，创建全部模板文件（未完成填写）`
