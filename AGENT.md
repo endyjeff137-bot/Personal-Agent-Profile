@@ -8,7 +8,7 @@
 agent_read: true          # 本文件必须被 Agent 读取
 kind: protocol            # 类型：协议（最高优先级）
 priority: core            # 优先级：core > high > normal > low
-updated: {{YYYY-MM-DD}}
+updated: 2026-11-01
 version: 1.0
 ---
 ```
@@ -19,7 +19,7 @@ version: 1.0
 
 ## 0. 30 秒速读版
 
-我是 **{{你的称呼/昵称}}**。请按以下顺序加载我的档案：
+我是 **endyjeff137-bot**（GitHub ID；日常称呼尚未确定，档案里多处提到用「你」或「老板」两种候选——**用哪个都行，别纠结**，按你在对话里的称呼走）。请按以下顺序加载我的档案：
 
 1. `AGENT.md`（本文件）→ 2. `profile/01-preferences.md` → 3. `rules/10-hard-rules.md`
 → 4. `rules/11-style-rules.md` → 5. `memory/CHANGELOG.md`（最近变更）→ 6. 按需读其余文件。
@@ -107,6 +107,11 @@ confidence: high          # 内容可信度：high | medium | low（低则向我
 | `prompts/40-my-prompt-library.md` | example | on-demand | 需要我的习惯话术时 |
 | `templates/50-templates.md` | example | on-demand | 需要格式时 |
 | `private/*` | — | **skip** | ⚠️ 不在公开仓库，读到也**不要引用** |
+| `README.md` | index | core | 人类入口（说明 + 5 步上手 + 安全红线） |
+| `QUICKSTART.md` | index | normal | 新手第一次上手的操作步骤 |
+| `GITHUB-AUTH.md` | note | on-demand | 推送授权方式与故障排查（非 Agent 指令） |
+| `push.bat` | — | skip | 日常一键推送脚本（Windows 双击） |
+| `.gitattributes` | — | skip | 换行符策略，无需 Agent 读取 |
 
 ---
 
@@ -159,8 +164,8 @@ future_extensions: 可加 JSON 版 FILE-MAP、MCP 服务器、向量索引，但
 ---
 
 <!-- AGENT-BLOCK:START kind=fact priority=normal -->
-**仓库主人**：{{你的称呼}}
+**仓库主人**：endyjeff137-bot
 **公开地址**：`https://github.com/endyjeff137-bot/Personal-Agent-Profile`
 **raw 入口**：`https://raw.githubusercontent.com/endyjeff137-bot/Personal-Agent-Profile/main/AGENT.md`
-**最近更新**：2026-10-20
+**最近更新**：2026-11-01
 <!-- AGENT-BLOCK:END -->

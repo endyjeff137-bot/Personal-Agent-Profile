@@ -5,7 +5,7 @@
 agent_read: true
 kind: index
 priority: high
-updated: {{YYYY-MM-DD}}
+updated: 2026-11-01
 confidence: high
 ---
 ```
@@ -25,6 +25,12 @@ confidence: high
 
 ## 2026
 
+- `[2026-11-01] 体检修复 · 修改 · 🔧 消除三处协议/事实不一致：① 体验分口径统一（满分为 5 分制，「480」=千分制换算即 4.8 分，「70」=百分制换算即 0.7 分）② README 的 \`AGENT:KIND=meta\` 改为协议定义的 \`AGENT-BLOCK:START kind=index priority=core\` ③ AGENT.md File Map 补入 README/QUICKSTART/GITHUB-AUTH/push.bat/.gitattributes`
+- `[2026-11-01] 30-long-term-memory.md · 修改 · 🧠 填实唯一完全空白的记忆层：10 条核心事实、7 条稳定偏好、6 条反复强调的规则、4 条外部记忆指针`
+- `[2026-11-01] 22-decisions-log.md · 修改 · 📝 从真实项目反推补入 5 条决策及理由（固定毛利定价 / 偏远限售 / 阶梯运费换绑 / 优先达人分销 / 档案公开留白）`
+- `[2026-11-01] 21-people.md · 修改 · 👥 明确"一人公司故无固定人员"，补 4 条沟通规则；敏感角色统一只留代号层，不写任何个人信息`
+- `[2026-11-01] 02-work-context.md · 修改 · ➕ 补客单价约 58 元`
+- `[2026-11-01] AGENT.md · 修改 · 🏷️ 填入 GitHub ID endyjeff137-bot，称呼标注为"按对话里的称呼走"，消除两处 \`{{你的称呼}}\` 占位`
 - `[2026-10-20] 批量 · 修改 · 🎯 AI 代填核心内容（基于合作观察）：00 身份 / 01 偏好★ / 02 业务背景 / 03 工具 / 04 知识地图 / 05 词典 / 06 目标 / 10 硬规则★ / 11 风格★ / 12 禁区 / 20 当前项目 / 31 教训。完成度 ~85%，🔍 标记为推断项待老板复核`
 - `[2026-10-20] 仓库 · 新增 · 🎉 已推送上线：github.com/endyjeff137-bot/Personal-Agent-Profile，27 文件 / 72KB，Public，分支 main，raw 链接已验证可访问`
 - `[2026-10-20] GITHUB-AUTH.md · 新增 · 授权指南：浏览器 OAuth / Fine-grained Token / gh CLI 三种方式 + 7 条报错对照表 + 代理开关命令`
@@ -39,7 +45,9 @@ confidence: high
 
 ### {{YYYY-MM-DD}}
 
-- `[{{YYYY-MM-DD}}] 全部 · 新增 · 仓库初始化，创建全部模板文件（未完成填写）`
+- `[2026-11-01] 20-current-projects.md · 修改 · 📌 P4 状态更新为"已完成一轮体检修复"，并补充体验分换算说明`
+- `[2026-11-01] 05-glossary.md · 修改 · 📖 体验分条目统一为 5 分制口径`
+- `[2026-11-01] 全部 · 新增 · 仓库初始化，创建全部模板文件（未完成填写）`
 
 ---
 
