@@ -103,16 +103,19 @@ Personal-Agent-Profile/
 
 ## 跨电脑同步
 
+> 我有 **两台电脑** + **iPhone**。GitHub 是唯一真源，本地只是副本。
+
 | 场景 | 做法 |
 |---|---|
-| 新电脑 | `git clone https://github.com/endyjeff137-bot/Personal-Agent-Profile.git` |
+| **新电脑** | clone 到固定位置 `~/.workbuddy/profiles/Personal-Agent-Profile/`（详细步骤见 [`GITHUB-AUTH.md`](./GITHUB-AUTH.md)） |
 | 已克隆的机器 | 编辑前 `git pull`，编辑后 `git commit && git push` |
-| Obsidian | 把仓库 clone 到 Vault 子目录（如 `Vault/MyProfile/`），用 **Obsidian Git 插件**自动提交；双链、搜索、移动端全都有 |
-| 本地 Agent / 脚本 | 让它读**本地路径** `~/Personal-Agent-Profile/AGENT.md`（比网络快、可离线） |
+| 不想用命令行 | 装 [GitHub Desktop](https://desktop.github.com)，File → Add local repository，之后点 Commit → Push |
+| 本地 Agent / 脚本 | 让它读**本地路径** `~/.workbuddy/profiles/Personal-Agent-Profile/AGENT.md`（比网络快、可离线） |
 | 云端 AI（ChatGPT/Claude 等） | 给 **raw 链接**：`https://raw.githubusercontent.com/endyjeff137-bot/Personal-Agent-Profile/main/AGENT.md` |
 | 免 git 方案 | 在 GitHub 网页点 **Code → Download ZIP**，编辑后用 GitHub 网页上传覆盖 |
+| iPhone 上看 | 直接在 GitHub App / 浏览器看仓库，或存 raw 链接到快捷方式 |
 
-> 单点原则：**GitHub 是唯一真源**。本地只是副本。任何电脑上改完都推上去，换机器拉下来即可。
+> 单点原则：**GitHub 是唯一真源**。任何电脑上改完都推上去，换机器拉下来即可。
 
 ## 安全红线 · 绝对不要上传
 

@@ -25,7 +25,10 @@ confidence: high
 
 ## 2026
 
-- `[2026-11-01] 03-tools-stack.md · 修改 · 🔍→实测核实本机工具栈：剪映已装（AppData/Local/JianyingPro）、Obsidian 未装（列入"我不用的工具"）、AutoClaw 已装（智谱桌面 AI Agent）、豆包+腾讯元宝已装。手机型号与多台电脑仍待我填`
+- `[2026-11-01] 03-tools-stack.md · 修改 · 📱 补手机 iPhone、多台电脑=是（两台）；跨电脑靠 GitHub 同步`
+- `[2026-11-01] GITHUB-AUTH.md + QUICKSTART.md · 修改 · 🔧 修正硬编码的旧临时目录路径（2026-10-05-10-46-59），改为稳定路径 ~/.workbuddy/profiles/Personal-Agent-Profile；新增「新电脑首次使用」章节（仓库已存在直接 clone + 配置推送身份 + GitHub Desktop 免命令行方案）`
+- `[2026-11-01] README.md · 修改 · 📖 跨电脑同步表重写：标注两台电脑+iPhone，新增「不想用命令行」「iPhone 上看」两行，删除 Obsidian 行（我未装）`
+- `[2026-11-01] 03-tools-stack.md · 修改 · 🔍→实测核实本机工具栈：剪映已装（AppData/Local/JianyingPro）、Obsidian 未装（列入"我不用的工具"）、AutoClaw 已装（智谱桌面 AI Agent）、豆包+腾讯元宝已装。`
 - `[2026-11-01] 00-identity.md · 修改 · 👤 称呼定为"用你即可"；补入四条工作原则（不要瞎猜/追求简单/目标驱动/只做必要的修改）；补桌面 AI Agent（WorkBuddy 主力 + AutoClaw）`
 - `[2026-11-01] 40-my-prompt-library.md · 修改 · 💬 从通用模板改写为真实话术：最常用四句（直接干别给选项/别猜/算账/反驳我）+ 抖店专用 5 组（选品评估/ROI 能不能投/挂车文案/改价熔断检查/每日复盘）+ 档案加载一句话版`
 - `[2026-11-01] 体检修复 · 修改 · 🔧 消除三处协议/事实不一致：① 体验分口径统一（满分为 5 分制，「480」=千分制换算即 4.8 分，「70」=百分制换算即 0.7 分）② README 的 \`AGENT:KIND=meta\` 改为协议定义的 \`AGENT-BLOCK:START kind=index priority=core\` ③ AGENT.md File Map 补入 README/QUICKSTART/GITHUB-AUTH/push.bat/.gitattributes`

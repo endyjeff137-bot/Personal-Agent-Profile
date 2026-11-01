@@ -7,6 +7,8 @@
 
 ## 前提：仓库要先建出来
 
+> ⚠️ **第二台电脑不需要建仓库** —— 仓库已在 GitHub 上了，直接 clone 即可（见下方「新电脑首次使用」）。
+
 授权是"允许 push"，但仓库本身得先存在。**先做这步**：
 
 👉 打开（字段已预填）：
@@ -21,6 +23,31 @@
 
 ---
 
+## 🆕 新电脑首次使用（仓库已存在，直接 clone）
+
+我在两台电脑上用这个仓库。**换电脑时不用重新建仓**，只要 clone：
+
+```bash
+# 1. 建目录并 clone 到固定位置
+mkdir -p "C:/Users/<你的用户名>/.workbuddy/profiles"
+cd "C:/Users/<你的用户名>/.workbuddy/profiles"
+git clone https://github.com/endyjeff137-bot/Personal-Agent-Profile.git
+```
+
+**推荐固定放在** `~/.workbuddy/profiles/Personal-Agent-Profile/` —— 路径稳定，且 WorkBuddy 的 `my-profile` skill 会直接读这个位置。
+
+clone 完改一次推送身份（避免每次提交都带参数）：
+
+```bash
+cd "C:/Users/<你的用户名>/.workbuddy/profiles/Personal-Agent-Profile"
+git config user.name "endyjeff137-bot"
+git config user.email "endyjeff137-bot@users.noreply.github.com"
+```
+
+> **不想用命令行？** 用 [GitHub Desktop](https://desktop.github.com)：File → Add local repository → 选文件夹，之后编辑完点左上角 Commit → Push。
+
+---
+
 ## 方式 A · 浏览器登录（推荐，30 秒）
 
 **你什么都不用准备，直接 push 就会弹登录。**
@@ -28,7 +55,7 @@
 在本机终端（PowerShell 或 Git Bash）执行：
 
 ```bash
-cd "C:/Users/endyj/WorkBuddy/2026-10-05-10-46-59/Personal-Agent-Profile"
+cd "C:/Users/endyj/.workbuddy/profiles/Personal-Agent-Profile"
 git push -u origin main
 ```
 
@@ -78,7 +105,7 @@ git push -u origin main
 ### 第 3 步：用它 push
 
 ```bash
-cd "C:/Users/endyj/WorkBuddy/2026-10-05-10-46-59/Personal-Agent-Profile"
+cd "C:/Users/endyj/.workbuddy/profiles/Personal-Agent-Profile"
 git push -u origin main
 ```
 

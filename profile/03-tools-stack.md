@@ -17,8 +17,8 @@ confidence: medium
 ## 电脑与系统
 
 - 主力电脑：**Windows**（主要工作机）
-- 手机：**{{iPhone / Android}}** ← 待我填
-- 多台电脑：**{{是 / 否}}** —— 跨电脑靠 GitHub 同步
+- 手机：**iPhone**
+- 多台电脑：**是（两台）** —— 跨电脑靠 GitHub 同步，档案仓库 clone 即可
 
 ## 日常软件
 

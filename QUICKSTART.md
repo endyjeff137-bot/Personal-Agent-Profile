@@ -40,7 +40,7 @@
 2. 执行：
 
 ```bash
-cd "C:/Users/endyj/WorkBuddy/2026-10-05-10-46-59/Personal-Agent-Profile"
+cd "C:/Users/endyj/.workbuddy/profiles/Personal-Agent-Profile"
 git push -u origin main
 ```
 
