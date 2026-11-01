@@ -5,7 +5,7 @@
 agent_read: true
 kind: fact
 priority: normal
-updated: 2026-10-20
+updated: 2026-11-01
 confidence: medium
 ---
 ```
@@ -17,22 +17,23 @@ confidence: medium
 ## 电脑与系统
 
 - 主力电脑：**Windows**（主要工作机）
-- 手机：**{{iPhone / Android}}**
+- 手机：**{{iPhone / Android}}** ← 待我填
 - 多台电脑：**{{是 / 否}}** —— 跨电脑靠 GitHub 同步
 
 ## 日常软件
 
-- 笔记/知识库：**{{Obsidian / 无}}** 🔍（我的档案仓库支持 clone 进 Obsidian）
+- 笔记/知识库：**无 Obsidian**（2026-11-01 实测未安装）。档案仓库用 VS Code / 记事本 + Git 直接编辑
 - 办公：Excel / WPS
 - 浏览器：**Chrome**
 - 通讯：微信
-- 设计/剪辑：**{{剪映 / 无}}** 🔍
+- 设计/剪辑：**剪映**（2026-11-01 实测已安装，路径 `AppData\Local/JianyingPro`）
 - 网络：**闪连 VPN**（系统代理 127.0.0.1:19828，日常工作需要，别当风险项处理）
 
 ## AI 工具（我在用）
 
 - 主力 AI 工作台：**WorkBuddy**（带浏览器自动化、定时任务、资料库）
-- 其他对话 AI：**{{ChatGPT / Claude / 豆包 / DeepSeek}}** 🔍
+- 桌面 AI Agent：**AutoClaw**（智谱出品，一键安装的本地 OpenClaw 应用，50+ 预装 skill，可接飞书等 IM）
+- 其他对话 AI：**豆包、腾讯元宝**（2026-11-01 实测本机已装客户端）
 - 编程 AI：不直接使用（交给 WorkBuddy 代做）
 - 自动化：WorkBuddy 定时排程 + 本地脚本
 - 本地模型：无
@@ -57,7 +58,8 @@ confidence: medium
 
 ## 我不用的工具（别推荐）
 
-- {{}}
+- **Obsidian** —— 未安装，别推荐（除非我明确说要装）
+- 编程 IDE / 命令行工作流 —— 我不写代码，交给 AI
 
 ---
 
@@ -66,3 +68,4 @@ confidence: medium
 | 日期 | 改了什么 |
 |---|---|
 | 2026-10-20 | AI 预填，含 🔍 推断项 |
+| 2026-11-01 | 实测本机核实：剪映已装、Obsidian 未装、AutoClaw 已装、豆包+元宝已装；补剪映路径 |
