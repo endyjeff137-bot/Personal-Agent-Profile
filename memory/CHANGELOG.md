@@ -25,6 +25,10 @@ confidence: high
 
 ## 2026
 
+- `[2026-11-02] rules/10-hard-rules.md · 修改 · ⚠️ 事实纠错：第9条「ROI < 4 不开付费投放」改为动态计算保本ROI。实测保本ROI 随运费和件数在 6.44~116 浮动，运费6.5+1件时是 116（这才是不能投的真正原因）。投流决策前先跑 doudian-roi-calc`
+- `[2026-11-02] context/22-decisions-log.md · 修改 · 📝 新增两条决策：① 废弃固定ROI门槛改动态计算 ② 换绑运费从"改善自己利润"升级为"解锁达人分销"——佣金空间从0.9%拉到12.1%，同一件事解两个死结`
+- `[2026-11-02] profile/03-tools-stack.md · 修改 · 🧮 新增「我自建的专属工具」段：抖店算账器（doudian-roi-calc skill + 桌面 抖店算账.bat），纯标准库零依赖`
+- `[2026-11-02] 全部 · 修改 · 🧹 技能清理：127 → 79 个目录（移出48个到回收区），连接器 5 → 3（卸载通达信、腾讯自选股）。保留 SRC 三兄弟、nuwa-skill、enterprise-ai-roadmap`
 - `[2026-11-01] 03-tools-stack.md · 修改 · 📱 补手机 iPhone、多台电脑=是（两台）；跨电脑靠 GitHub 同步`
 - `[2026-11-01] GITHUB-AUTH.md + QUICKSTART.md · 修改 · 🔧 修正硬编码的旧临时目录路径（2026-10-05-10-46-59），改为稳定路径 ~/.workbuddy/profiles/Personal-Agent-Profile；新增「新电脑首次使用」章节（仓库已存在直接 clone + 配置推送身份 + GitHub Desktop 免命令行方案）`
 - `[2026-11-01] README.md · 修改 · 📖 跨电脑同步表重写：标注两台电脑+iPhone，新增「不想用命令行」「iPhone 上看」两行，删除 Obsidian 行（我未装）`

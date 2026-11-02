@@ -5,7 +5,7 @@
 agent_read: true
 kind: fact
 priority: normal
-updated: 2026-11-01
+updated: 2026-11-02
 confidence: medium
 ---
 ```
@@ -37,6 +37,17 @@ confidence: medium
 - 编程 AI：不直接使用（交给 WorkBuddy 代做）
 - 自动化：WorkBuddy 定时排程 + 本地脚本
 - 本地模型：无
+
+## 我自建的专属工具
+
+<!-- AGENT-BLOCK:START kind=fact priority=high -->
+- **抖店算账器**（`doudian-roi-calc` skill）：按我的实际成本结构算保本 ROI、可承受获客成本、达人CPS 佣金上限
+  - 双击入口：桌面 `抖店算账.bat`
+  - 脚本：`~/.workbuddy/skills/doudian-roi-calc/scripts/roi_calculator.py`
+  - 纯标准库零依赖，Python 3.8+
+  - **用途**：任何涉及投流、定价、运费、佣金、每单件数的算账，先跑它再回答
+  - 已用它纠正了旧档案里"ROI < 4"的错误（实际保本 ROI 随运费和件数在 6.4~116 浮动）
+<!-- AGENT-BLOCK:END -->
 
 ## 我愿意接受的技术门槛
 
