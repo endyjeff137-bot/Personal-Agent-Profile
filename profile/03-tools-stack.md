@@ -5,7 +5,7 @@
 agent_read: true
 kind: fact
 priority: normal
-updated: 2026-11-02
+updated: 2026-11-03
 confidence: medium
 ---
 ```
@@ -47,6 +47,12 @@ confidence: medium
   - 纯标准库零依赖，Python 3.8+
   - **用途**：任何涉及投流、定价、运费、佣金、每单件数的算账，先跑它再回答
   - 已用它纠正了旧档案里"ROI < 4"的错误（实际保本 ROI 随运费和件数在 6.4~116 浮动）
+- **抖店定价计算器**（`doudian-pricing-calc` skill）：套进货价算合理卖价、最高可接受进货价、达人佣金空间
+  - 双击入口：桌面 `抖店定价.bat`
+  - 脚本：`~/.workbuddy/skills/doudian-pricing-calc/scripts/pricing_calculator.py`
+  - 纯标准库零依赖，Python 3.8+
+  - **用途**：新定价、谈供应商、比价带、判断哪款能做达人分销
+  - 配套公式：`售价 ≥ 进货价 + (平台扣+运费)÷件数 + 目标单件净利`；做达人分销时分子再乘 `(1−佣金率)`
 <!-- AGENT-BLOCK:END -->
 
 ## 我愿意接受的技术门槛
