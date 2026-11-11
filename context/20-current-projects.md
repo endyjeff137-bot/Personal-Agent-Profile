@@ -5,7 +5,7 @@
 agent_read: true
 kind: context
 priority: normal
-updated: 2026-11-01
+updated: 2026-11-11
 confidence: medium
 ---
 ```
@@ -52,6 +52,14 @@ confidence: medium
 - **当前状态**：✅ 已上线 GitHub（Public，27 文件），raw 链接可访问。2026-11-01 完成一轮体检修复（体验分口径统一、README 标记对齐、File Map 补全、3 个空白文件填实）
 - **下一步**：日常改动双击 `push.bat` 推送；季度做一次记忆健康检查
 - **开始时间**：2026-10-20（主体完成）｜ **最近维护**：2026-11-01
+
+### P5 · 抖店操盘手专家包（已建成）
+
+- **一句话**：把经营知识固化成可复用的 WorkBuddy 专家，换平台也能用
+- **当前状态**：✅ 已注册到我的专家市场。`douyin-shop-operator`（Agent 型）10 文件：成本模型 + 10 条铁律 + 官方五环节节奏 + 3 个算账脚本 + 2 份参考（铁律速查 / 周复盘模板）
+- **配套工具**：`doudian-pricing-calc`（定价）`doudian-roi-calc`（保本ROI）`screen_products`（批量选品筛选）
+- **下一步**：把周复盘跑成常态（每周固定时间）；平台费率用 `--calib` 按真实账单校准
+- **开始时间**：2026-11-07
 
 ## 🟡 暂停中
 

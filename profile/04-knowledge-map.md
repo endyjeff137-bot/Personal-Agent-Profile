@@ -5,7 +5,7 @@
 agent_read: true
 kind: fact
 priority: high
-updated: 2026-10-20
+updated: 2026-11-11
 confidence: medium
 ---
 ```
@@ -31,6 +31,30 @@ confidence: medium
 
 - **ROI 和净利的口径**经常混着用 → 涉及数字时先确认我指的是哪个
 - 平台规则细节（限售、违规处置）知道大概但记不全 → 涉及处罚类动作帮我复核
+
+## 📚 抖店官方权威入口（规则会变，以当日公告为准）
+
+| 用途 | 链接 |
+|---|---|
+| 学习中心 | `https://school.jinritemai.com/doudian/web/home` |
+| 新手经营指南 | `https://school.jinritemai.com/doudian/wap?from=buyin_daren&should_full_screen=1` |
+| **规则中心** | `https://school.jinritemai.com/doudian/web/rules/nHc6agXtzZR1` |
+
+**官方重点关注项**：体验分、价格、资质、虚假交易、发货物流
+
+> ⚠️ **规则会更新**。涉及资质、类目、价格、虚假交易、发货物流的判断，必须查规则中心当日公告，不要凭训练数据里的旧规则回答。
+
+**官方五环节经营节奏**（我按这个执行，但**剔除直播**）：
+
+| 环节 | 我的执行方式 |
+|---|---|
+| 开店准备 | ✅ 已完成，一次性 |
+| 选品发品 | `screen_products` 筛货 → `qinghu-douyin-quick-listing` 铺货 → `xzb-dy-move` 管理 |
+| 获得流量 | ⚠️ **无直播**：短视频挂车 + 商城商品卡 + 搜索 + 精选联盟达人 + 千川点火器 |
+| 订单与售后 | `douyin-service-reply` / `ecom-cs-agent` / 体验分拆解 |
+| 每日看数 | `ecom-data-doctor` / `dianshop-compass-analyzer` / `ecommerce-daily-report` |
+| 每周复盘 | 见专家包 `references/weekly-review.md`，含"最小可用集 7 问"降级方案 |
+| 持续查规则 | 查规则中心当日公告 |
 
 ## 学习偏好
 
