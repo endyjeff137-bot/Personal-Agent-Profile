@@ -5,7 +5,7 @@
 agent_read: true
 kind: fact
 priority: normal
-updated: 2026-11-03
+updated: 2026-11-11
 confidence: medium
 ---
 ```
@@ -37,6 +37,14 @@ confidence: medium
 - 编程 AI：不直接使用（交给 WorkBuddy 代做）
 - 自动化：WorkBuddy 定时排程 + 本地脚本
 - 本地模型：无
+- **全网信息获取：Agent Reach 1.6.1**（2026-11-11 装，MIT 开源，13+ 平台）
+  - 已注册为 WorkBuddy skill：`~/.workbuddy/skills/agent-reach/`
+  - 可执行文件：`C:\Users\endyj\.local\bin\agent-reach.exe`（已加入用户 PATH）
+  - 桌面入口：`全网情报.bat`（诊断/搜索/读链接/加平台/登录）
+  - **实测可用**：web 搜索+读网页（Exa+Jina）· B站 搜索/读详情/热榜 · V2EX 全通 · GitHub 走 API
+  - **受限**：B站字幕需登录 · YouTube 读取/字幕被 Google 反爬拦 · 小红书需装 Chrome 的 OpenCLI 扩展
+  - 能力边界：**只读**，不发帖不评论不点赞；登录一律由用户本人在浏览器完成
+  - 抖店用法：竞品视频情报（B站测评/开箱）、选品趋势、竞品价格带、用户吐槽收集
 
 ## 我自建的专属工具
 
@@ -86,3 +94,4 @@ confidence: medium
 |---|---|
 | 2026-10-20 | AI 预填，含 🔍 推断项 |
 | 2026-11-01 | 实测本机核实：剪映已装、Obsidian 未装、AutoClaw 已装、豆包+元宝已装；补剪映路径 |
+| 2026-11-11 | 新增 Agent Reach 1.6.1 全网信息获取（13+平台，MIT开源）；已注册为 WorkBuddy skill，实测 web/B站/V2EX/GitHub 可用；桌面入口「全网情报.bat」；顺带装了 gh CLI 2.103.3（待登录） |
