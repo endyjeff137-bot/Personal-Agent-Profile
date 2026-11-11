@@ -39,10 +39,39 @@ confidence: medium
 | 学习中心 | `https://school.jinritemai.com/doudian/web/home` |
 | 新手经营指南 | `https://school.jinritemai.com/doudian/wap?from=buyin_daren&should_full_screen=1` |
 | **规则中心** | `https://school.jinritemai.com/doudian/web/rules/nHc6agXtzZR1` |
+| **开放平台**（开发者/API） | `https://op.jinritemai.com/` |
+| AI 助手说明 | `https://school.jinritemai.com/doudian/web/articlev0/aJBGHwgD3poU` |
+| AI 图文发布指南 | `https://school.jinritemai.com/doudian/web/articlev0/aHt5ad18FPgj` |
+| 自用型应用入驻指南 | `https://op.jinritemai.com/docs/guide-docs/6/583` |
+| 授权介绍 | `https://op.jinritemai.com/docs/guide-docs/133` |
 
 **官方重点关注项**：体验分、价格、资质、虚假交易、发货物流
 
 > ⚠️ **规则会更新**。涉及资质、类目、价格、虚假交易、发货物流的判断，必须查规则中心当日公告，不要凭训练数据里的旧规则回答。
+
+## 🤖 我店铺已开通的官方 AI 功能（2026-11-11 后台实测）
+
+| 功能 | 状态 | 路径 |
+|---|---|---|
+| AI 助手 | ✅ | 侧边栏固定项 |
+| AI 智能成片 | ✅ | `/ffa/content-tool/ai-generate-video-v2` |
+| 图文运营 | ✅ | `/ffa/content-tool/ai-generate-figure` |
+| **售后小助手** | ✅ | `/ffa/merchant-aftersale-assistant/home` |
+| **售后挽单助手** | ✅ | `/ffa/maftersale/aftersale/redeem/assistant` |
+
+> 后两个官方指南里没提，是我店铺已开通但没用起来的。覆盖我客服链路最弱的环节（纠纷仲裁 + 差评挽单）。
+
+## 🔌 官方接入的三条路（我的现状对照）
+
+| 路线 | 我的现状 | 判断 |
+|---|---|---|
+| ① 抖店内置 AI | ✅ 已开通 5 个（见上表） | 可用但覆盖不了算账/选品/佣金规划 |
+| ② 服务市场 | 已有 7 个 MCP 连接器（agent-earth 含蝉妈妈抖音数据、linkfox 1688货源、ai-hive 生图、腾讯文档/会议/邮件） | **不必再买**，缺的是授权不是软件 |
+| ③ 开放平台自研 | 🔴 **没有**，全部数据靠 CDP 模拟操作 | ⭐ **真缺口** —— 官方 API = 给现有脚本一张官方通行证，解决风控 + 拿到写权限 |
+
+> ⚠️ 走 ③ 时：账号授权必须在**官方页面由店铺账号本人同意**，绝不把密码/验证码/长期令牌交给非官方页面或个人。
+> 建议应用类型选**自用型**（接自己的系统，不是上架服务市场给别人用）。
+> 权限申请遵循**最小必要**：先只读（商品/订单/账单/罗盘），稳定后再逐项开写（改价/上架/发货），每项配审批闸门。
 
 **官方五环节经营节奏**（我按这个执行，但**剔除直播**）：
 
