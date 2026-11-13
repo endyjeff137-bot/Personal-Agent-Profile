@@ -5,7 +5,7 @@
 agent_read: true
 kind: fact
 priority: normal
-updated: 2026-11-11
+updated: 2026-11-13
 confidence: medium
 ---
 ```
@@ -61,6 +61,14 @@ confidence: medium
   - 纯标准库零依赖，Python 3.8+
   - **用途**：新定价、谈供应商、比价带、判断哪款能做达人分销
   - 配套公式：`售价 ≥ 进货价 + (平台扣+运费)÷件数 + 目标单件净利`；做达人分销时分子再乘 `(1−佣金率)`
+- **AI 短剧制片台**（WorkBuddy 专家「短剧导演」`douyin-drama-studio`，2026-11-13 建）
+  - 六角色班子：故事编剧 → 副导演 → 场景策划 → 短剧生成 → 剪辑配音 → 影片校对
+  - 双击入口：桌面 `短剧制片台.bat`；工作台样例在桌面 `短剧工作台\`
+  - 脚本：`~/.workbuddy/plugins/marketplaces/my-experts/plugins/douyin-drama-studio/skills/drama-pipeline/scripts/drama_kit.py`
+  - 本地零成本配音：`tts_local.py`（Windows SAPI 中文音色，离线无限量）
+  - 成本：60 秒静帧动效版 ~288-480 credits；全 AI 动态 3600 credits（贵 7.5 倍）
+  - **关键约束**：商用生图走 agent-earth（FLUX 3 无水印）；WorkBuddy ImageGen 带水印不可商用
+  - **角色一致性**：必须用 `reference_image_urls`（H3 Max 支持 9 张），同 seed 不锁脸
 <!-- AGENT-BLOCK:END -->
 
 ## 我愿意接受的技术门槛
