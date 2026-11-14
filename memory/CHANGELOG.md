@@ -36,6 +36,8 @@ confidence: high
 - `[2026-11-13] 03-tools-stack.md · 新增 · 🎬 AI 短剧制片台（WorkBuddy 专家「短剧导演」douyin-drama-studio）：六角色班子 + drama_kit.py 六合一流水线 + tts_local.py 本地零成本配音。首条样片已出片（20.3s/5镜/字幕齐/校对pass）。关键实测：①同seed不锁脸，必须用 reference_image_urls ②WorkBuddy ImageGen 带水印，商用生图必须走 agent-earth ③edge-tts 403，改用 Windows SAPI 本地音色（零成本）④全AI动态比静帧动效贵 7.5 倍 ⑤ffmpeg concat/filter_complex 三个路径转义坑 ⑥校对新增角色素材覆盖+素材重复度检查（自动抓「两角色共用一张脸」穿帮）。桌面入口「短剧制片台.bat」
 
 - `[2026-11-14] 03-tools-stack.md · 修改 · 🎬 AI 短剧升级 v2（v1 样片因「幻灯片感/零唇动/跨镜头换脸/无配乐」被打回）。技术栈落地：MagiHuman 音频驱动口型（24 credits/秒@256p，Whisper 转录验证音画同步准确）、可灵 O3 Pro elements 命名角色+multi_prompt、CassetteAI 配乐、FlashVSR 超分。实测坑：MCP tool_url 必须放 params 内部、参考图锁死身份需每角色独立定妆图、amix/volume 顺序、-i 必须先于 filter_complex、weights 需引号。v2 样片 18.5s 已出。agent-earth 余额 705→2.09
+
+- `[2026-11-14] 03-tools-stack.md · 修改 · 💰 AI 短剧成本评估：3 分钟/82镜混合路线 = 15,286 credits ≈ ¥99（标准抽卡档）。换算 1 credit ≈ ¥0.0065（1 USD=1000 credits，汇率 6.7156）。三条实测计费规则：MagiHuman 按请求时长计费、技术失败不收费、合并台词不省钱。成本结构：说话镜占 69.7%。画质路线 256p+超分比 720p 直出便宜 17%。新增 cost_estimator.py + 桌面「短剧成本预估.bat」
 ## 2026
 
 - `[2026-11-11] profile/04-knowledge-map.md · 修改 · 📚 补官方入口与接入路径：加开放平台 op.jinritemai.com、AI助手说明、AI图文指南、自用型应用入驻指南、授权介绍 5 个链接；新增「我店铺已开通的官方AI功能」表（AI助手/AI智能成片/图文运营/售后小助手/售后挽单助手，后两个官方指南未提）；新增「官方接入三条路对照」表，判定路线③开放平台自研是真缺口（现有脚本全靠CDP模拟，需官方API解决风控与写权限）`

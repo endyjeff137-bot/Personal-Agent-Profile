@@ -72,6 +72,9 @@ confidence: medium
   - **v2 真短剧技术栈（2026-11-14 实测）**：MagiHuman 音频驱动口型（24 credits/秒@256p，唯一实测通过的唇动方案）· 可灵 O3 Pro `elements` 命名角色 + `multi_prompt` 一镜多段（135/秒）· CassetteAI 配乐（24/分钟）· FlashVSR 超分（0.6/百万像素）
   - ⚠️ **agent-earth 的 ExecuteTool 必须把 tool_url 放进 params 内部**：`{"params":{"params":{...},"tool_url":"..."}}`，否则间歇性报 "must have required property tool_url"
   - ⚠️ **参考图会锁死面部身份**，提示词改不动 → 每角色必须有独立定妆图
+  - **成本预估器**（`cost_estimator.py` + 桌面 `短剧成本预估.bat`）：3 分钟短剧 = 15,286 credits ≈ **¥99**（混合路线标准档）。换算基准：agent-earth 1 USD=1000 credits，汇率 6.7156 → **1 credit ≈ ¥0.0065**
+  - ⚠️ **三条计费规则**：①MagiHuman 按【请求时长】计费，与音频长短无关 ②技术性失败不收费（"Failed calls are free"），抽卡只算"成功但质量不达标重做" ③合并台词省不了钱（计费看总秒数不看镜头数）
+  - 💡 **256p 生成 + 超分 = 39.7 credits/秒，比 720p 直出（48/秒）便宜 17%**
 <!-- AGENT-BLOCK:END -->
 
 ## 我愿意接受的技术门槛
