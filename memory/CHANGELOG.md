@@ -34,6 +34,8 @@ confidence: high
 - `[2026-11-11] 抖音对标选品 · 新增 · 🎯 完整跑通「对标抖主→爆款脚本→热销商品→1688同款→成本评估→查重」链路（蝉妈妈 + 1688 + Agent Reach 三源）。关键结论：①查重后 0 个全新款（在售已有22款猫砂盆，形态全覆盖）②真正空白是耗材线（除臭珠/筛网 0 款在售，抖音单达人能出500-1000单）③白牌盆真实价带 ¥39-59，不是抖音爆品价 ¥89-99（我用 meoof品牌款¥268 套白牌会虚报净利）④运费每涨¥1净利直接掉¥1，是最大变量。已出3款耗材待批上架方案
 
 - `[2026-11-13] 03-tools-stack.md · 新增 · 🎬 AI 短剧制片台（WorkBuddy 专家「短剧导演」douyin-drama-studio）：六角色班子 + drama_kit.py 六合一流水线 + tts_local.py 本地零成本配音。首条样片已出片（20.3s/5镜/字幕齐/校对pass）。关键实测：①同seed不锁脸，必须用 reference_image_urls ②WorkBuddy ImageGen 带水印，商用生图必须走 agent-earth ③edge-tts 403，改用 Windows SAPI 本地音色（零成本）④全AI动态比静帧动效贵 7.5 倍 ⑤ffmpeg concat/filter_complex 三个路径转义坑 ⑥校对新增角色素材覆盖+素材重复度检查（自动抓「两角色共用一张脸」穿帮）。桌面入口「短剧制片台.bat」
+
+- `[2026-11-14] 03-tools-stack.md · 修改 · 🎬 AI 短剧升级 v2（v1 样片因「幻灯片感/零唇动/跨镜头换脸/无配乐」被打回）。技术栈落地：MagiHuman 音频驱动口型（24 credits/秒@256p，Whisper 转录验证音画同步准确）、可灵 O3 Pro elements 命名角色+multi_prompt、CassetteAI 配乐、FlashVSR 超分。实测坑：MCP tool_url 必须放 params 内部、参考图锁死身份需每角色独立定妆图、amix/volume 顺序、-i 必须先于 filter_complex、weights 需引号。v2 样片 18.5s 已出。agent-earth 余额 705→2.09
 ## 2026
 
 - `[2026-11-11] profile/04-knowledge-map.md · 修改 · 📚 补官方入口与接入路径：加开放平台 op.jinritemai.com、AI助手说明、AI图文指南、自用型应用入驻指南、授权介绍 5 个链接；新增「我店铺已开通的官方AI功能」表（AI助手/AI智能成片/图文运营/售后小助手/售后挽单助手，后两个官方指南未提）；新增「官方接入三条路对照」表，判定路线③开放平台自研是真缺口（现有脚本全靠CDP模拟，需官方API解决风控与写权限）`

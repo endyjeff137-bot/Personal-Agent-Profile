@@ -5,7 +5,7 @@
 agent_read: true
 kind: fact
 priority: normal
-updated: 2026-11-13
+updated: 2026-11-14
 confidence: medium
 ---
 ```
@@ -69,6 +69,9 @@ confidence: medium
   - 成本：60 秒静帧动效版 ~288-480 credits；全 AI 动态 3600 credits（贵 7.5 倍）
   - **关键约束**：商用生图走 agent-earth（FLUX 3 无水印）；WorkBuddy ImageGen 带水印不可商用
   - **角色一致性**：必须用 `reference_image_urls`（H3 Max 支持 9 张），同 seed 不锁脸
+  - **v2 真短剧技术栈（2026-11-14 实测）**：MagiHuman 音频驱动口型（24 credits/秒@256p，唯一实测通过的唇动方案）· 可灵 O3 Pro `elements` 命名角色 + `multi_prompt` 一镜多段（135/秒）· CassetteAI 配乐（24/分钟）· FlashVSR 超分（0.6/百万像素）
+  - ⚠️ **agent-earth 的 ExecuteTool 必须把 tool_url 放进 params 内部**：`{"params":{"params":{...},"tool_url":"..."}}`，否则间歇性报 "must have required property tool_url"
+  - ⚠️ **参考图会锁死面部身份**，提示词改不动 → 每角色必须有独立定妆图
 <!-- AGENT-BLOCK:END -->
 
 ## 我愿意接受的技术门槛
